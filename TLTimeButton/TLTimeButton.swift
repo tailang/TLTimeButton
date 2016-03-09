@@ -17,14 +17,14 @@ import UIKit
 
 public class TLTimeButton: UIButton {
     
-    var timeLine: Int = 60 //倒计时初始时间
-    var originTitle: String! //原始文案显示
-    var finishTitle: String? //倒计时完成文案，如果未指定，则显示originTitle文案
-    var timeRunningUnit: String? //倒计时时数字后面的单位，如果为空则不显示
-    var enableColor: UIColor! //使能时的颜色
-    var disableColor: UIColor! //不使能时的颜色
+    private var timeLine: Int = 60 //倒计时初始时间
+    private var originTitle: String! //原始文案显示
+    private var finishTitle: String? //倒计时完成文案，如果未指定，则显示originTitle文案
+    private var timeRunningUnit: String? //倒计时时数字后面的单位，如果为空则不显示
+    private var enableColor: UIColor! //使能时的颜色
+    private var disableColor: UIColor! //不使能时的颜色
     
-    weak var delegate: TLTimeButtonDelegate?
+    weak public var delegate: TLTimeButtonDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
