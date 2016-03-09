@@ -10,6 +10,7 @@
 		2DE8421E1C90160500A218B0 /* TLTimeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE8421D1C90160500A218B0 /* TLTimeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DE842251C90160500A218B0 /* TLTimeButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE8421A1C90160500A218B0 /* TLTimeButton.framework */; };
 		2DE8422A1C90160500A218B0 /* TLTimeButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE842291C90160500A218B0 /* TLTimeButtonTests.swift */; };
+		2DE8423D1C901FF800A218B0 /* TLTimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8423C1C901FF800A218B0 /* TLTimeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2DE842241C90160500A218B0 /* TLTimeButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLTimeButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE842291C90160500A218B0 /* TLTimeButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLTimeButtonTests.swift; sourceTree = "<group>"; };
 		2DE8422B1C90160500A218B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE8423C1C901FF800A218B0 /* TLTimeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLTimeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				2DE8421D1C90160500A218B0 /* TLTimeButton.h */,
 				2DE8421F1C90160500A218B0 /* Info.plist */,
+				2DE8423C1C901FF800A218B0 /* TLTimeButton.swift */,
 			);
 			path = TLTimeButton;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE8423D1C901FF800A218B0 /* TLTimeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		2DE8422F1C90160500A218B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -319,6 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecoolhud.TLTimeButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -326,6 +332,7 @@
 		2DE842301C90160500A218B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
