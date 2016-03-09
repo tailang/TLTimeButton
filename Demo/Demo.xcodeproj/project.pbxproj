@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DB092E81C9040A300460B77 /* TLTimeButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB092E71C9040A300460B77 /* TLTimeButton.framework */; };
-		2DB092E91C9040A300460B77 /* TLTimeButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB092E71C9040A300460B77 /* TLTimeButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DB092EE1C9046EC00460B77 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB092EB1C9046EC00460B77 /* Info.plist */; };
+		2DB092EF1C9046EC00460B77 /* TLTimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB092ED1C9046EC00460B77 /* TLTimeButton.swift */; };
 		2DE8424B1C90246900A218B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8424A1C90246900A218B0 /* AppDelegate.swift */; };
 		2DE8424D1C90246900A218B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8424C1C90246900A218B0 /* ViewController.swift */; };
 		2DE842521C90246900A218B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE842511C90246900A218B0 /* Assets.xcassets */; };
@@ -32,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2DB092E91C9040A300460B77 /* TLTimeButton.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2DB092E71C9040A300460B77 /* TLTimeButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLTimeButton.framework; path = Carthage/Build/iOS/TLTimeButton.framework; sourceTree = "<group>"; };
+		2DB092EB1C9046EC00460B77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB092EC1C9046EC00460B77 /* TLTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimeButton.h; sourceTree = "<group>"; };
+		2DB092ED1C9046EC00460B77 /* TLTimeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLTimeButton.swift; sourceTree = "<group>"; };
 		2DE842471C90246900A218B0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE8424A1C90246900A218B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DE8424C1C90246900A218B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB092E81C9040A300460B77 /* TLTimeButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +70,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DB092EA1C9046EC00460B77 /* TLTimeButton */ = {
+			isa = PBXGroup;
+			children = (
+				2DB092EB1C9046EC00460B77 /* Info.plist */,
+				2DB092EC1C9046EC00460B77 /* TLTimeButton.h */,
+				2DB092ED1C9046EC00460B77 /* TLTimeButton.swift */,
+			);
+			path = TLTimeButton;
+			sourceTree = "<group>";
+		};
 		2DE8423E1C90246900A218B0 = {
 			isa = PBXGroup;
 			children = (
-				2DB092E71C9040A300460B77 /* TLTimeButton.framework */,
 				2DE842491C90246900A218B0 /* Demo */,
 				2DE8425E1C90246A00A218B0 /* DemoTests */,
 				2DE842481C90246900A218B0 /* Products */,
@@ -92,6 +101,7 @@
 		2DE842491C90246900A218B0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2DB092EA1C9046EC00460B77 /* TLTimeButton */,
 				2DE8424A1C90246900A218B0 /* AppDelegate.swift */,
 				2DE8424C1C90246900A218B0 /* ViewController.swift */,
 				2DE842511C90246900A218B0 /* Assets.xcassets */,
@@ -191,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB092EE1C9046EC00460B77 /* Info.plist in Resources */,
 				2DE842521C90246900A218B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB092EF1C9046EC00460B77 /* TLTimeButton.swift in Sources */,
 				2DE8424D1C90246900A218B0 /* ViewController.swift in Sources */,
 				2DE8424B1C90246900A218B0 /* AppDelegate.swift in Sources */,
 			);
