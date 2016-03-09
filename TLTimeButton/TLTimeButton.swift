@@ -48,14 +48,14 @@ public class TLTimeButton: UIButton {
         styleInit()
     }
     
-    private func styleInit() {
+    func styleInit() {
         self.userInteractionEnabled = true
         self.backgroundColor = enableColor
         self.setTitle(originTitle, forState: .Normal)
         self.addTarget(self, action: "clickButton:", forControlEvents: .TouchUpInside)
     }
     
-    private func clickButton(sender: TLTimeButton){
+    func clickButton(sender: TLTimeButton){
         
         if let theDelegate = delegate {
             if let theMethod = theDelegate.timeWillRun?() {
@@ -66,7 +66,7 @@ public class TLTimeButton: UIButton {
         startWithTime()
     }
     
-    private func startWithTime() {
+    func startWithTime() {
         
         var timeOut = timeLine
         
