@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TLTimeButton
 
 class ViewController: UIViewController {
     
